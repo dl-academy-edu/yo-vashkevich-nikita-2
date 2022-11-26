@@ -1,0 +1,80 @@
+.category__cards {
+	display: flex;
+	position: relative;
+	width: 280px;
+	/*height: 270px;*/
+	align-items: center;
+	justify-content: center;
+	transition: 0.4s;
+	margin-bottom: 23px;
+
+	&-apparel {
+		background-color: #DBE4DB;
+		//margin-right: 20px;
+	}
+
+	&-holiday {
+		background-color: #EADDD3;
+		//margin-right: 20px;
+	}
+
+	&-toys {
+		background-color: #F8F2DA;
+		//margin-right: 20px;
+	}
+
+	&-accessories {
+		background-color: #D5D4E1;
+	}
+
+	&-sale {
+		background-color: #F3D0DB;
+	}
+
+	&-adults {
+		background-color: #E5EAF8;
+	}
+	
+	&:hover {
+		transform: scale(1.02);
+	}
+	&:hover &-link {
+		text-decoration-line: underline;
+	}
+
+	   &-link {
+			position: absolute;
+			font-family: $font-montserrat;
+			font-weight: 700;
+			font-size: 26px;
+			line-height: 32px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			text-align: center;
+			width: 129px;
+			transition: 0.4s;
+		}
+
+		&-acc {
+			width: 192px;
+		}
+
+		&-link:hover {
+			text-decoration-line: underline;
+			transform: scale(1.05);
+		}
+
+		&-link:active {
+			text-decoration-line: underline;
+			opacity: 0.8;
+		}
+
+}
+
+.category__cards:not(:last-child) {
+	margin-right: 20px;
+}
+
+.cards-indent {
+	margin-left: 200px;
+}

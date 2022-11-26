@@ -1,0 +1,44 @@
+.breadcrumb {
+	display: flex;
+	transition: 0.4s;
+
+	&__item {
+		margin-right: 20px;
+	}
+
+	&__item:not(:first-child) {
+		opacity: 0.5;
+	}
+	&__item:not(:last-child)::after {
+		display: inline-block;
+		content: "";
+		background-image: url(../../img/icon/arrow.svg);
+		width: 8px;
+		height: 14px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left: 20px;
+		margin-right: 2opx;
+	}
+
+	&__link {
+		display: inline-block;
+		font-family: $font-crimson-text;
+		font-style: italic; 
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 26px;
+		color: #1E0606;
+		transition: 0.4s;
+	}
+	&__link:hover {
+		transform: scale(1.1);
+	}
+
+
+
+}
+
+.breadcrumb:hover {
+	transform: scale(1.01);
+}

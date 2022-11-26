@@ -1,0 +1,63 @@
+.cards-list {
+	&__item {
+		width: 380px;
+		margin-bottom: 14px;
+		transition: 0.4s;
+	}
+	&__item:hover {
+	transform: scale(1.02);
+	}
+
+	&__img{
+		margin-bottom: 20px;
+		background: #c8c4c4;
+		transition: 0.4s;
+	}
+	&__img:hover {
+		transform: scale(1.03);
+	}
+
+	&__date {
+		font-family: $font-open-sans;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #818181;
+		mix-blend-mode: normal;
+		margin-bottom: 7px;
+	}
+
+	&__title {
+		font-family: $font-montserrat;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 31px;
+		color: #1E0606;
+		transition: 0.4s;
+	}
+
+	&__title:hover {
+		text-decoration-line: underline;
+		color: #1E0606;
+		cursor: pointer;
+		transform: scale(1.03);
+	}
+	&__title:active {
+		text-decoration-line: underline;
+		color: #1E0606;
+		opacity: 0.8;
+	}
+
+	&__text {
+		font-family: $font-open-sans;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		color: #1E0606;
+		margin-top: 15px;
+		padding-bottom: 20px;
+	}
+}

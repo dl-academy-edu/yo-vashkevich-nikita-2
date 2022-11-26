@@ -1,5 +1,78 @@
 <footer class="footer">
-  <div class="container">
-    © 2022 Swimming Pool Plastering-Tile-Coping
+  <div class="container container-footer">
+    <div class="footer-list">
+      <div class="footer-list__item">
+        <p class="footer-list__text">Navigation</p>
+        <div class="footer-list__line"></div>
+        <ul class="column-list">
+          <li class="column-list__item"><a href="#" class="column-list__link">About Us</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Blog</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Design Services</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Featured On</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">2018 Holiday Catalog</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Shop By Designer</a></li>
+        </ul>
+      </div>
+      <div class="footer-list__item">
+        <p class="footer-list__text">Customer Information</p>
+        <div class="footer-list__line"></div>
+        <ul class="column-list">
+          <li class="column-list__item"><a href="#" class="column-list__link">Contact Us</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Sale Exclusions</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Shipping & Returns</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Terms & Conditions</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Privacy Policy</a></li>
+          <li class="column-list__item"><a href="#" class="column-list__link">Search</a></li>
+        </ul>
+      </div>
+      <article class="footer-list__item">
+        @@include('blocks/title.html', {
+          "title-text": "Connect",
+          "class": "visuallyhidden",
+        })
+        <p class="footer-list__text">Connect</p>
+        <div class="footer-list__line"></div>
+        <form class="form-email" action="#" method="POST">
+          <div class="form-email__block">
+            <input class="form-email__input" type= "text" name="email" placeholder="Email">
+            @@include('blocks/button.html', {
+              "button-text": "Join",
+              "class": "form-email__button button",
+            })
+            <!--input class="form-email__button button" type="submit" value="Join"-->
+          </div>
+          </form>
+          <div class="social"> 
+            <a class="social__img social__img-facebook" href="#"></a>
+            <a class="social__img social__img-twitter" href="#"></a>
+            <a class="social__img social__img-pinterest" href="#"></a>
+            <a class="social__img social__img-instagram" href="#"></a>
+          </div>  
+      </article>
+    </div>
+    <div class="line-max-width"></div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-rating">
+        <div class="rating-block">
+          <p class="rating-block__txt">Company Rating</p>
+          <div class="rating-mini">
+            <div class="rating-area">
+              <input type="radio" id="star-5" name="rating" value="5">
+              <label class="label-rating" for="star-5" title="Оценка «5»"></label>	
+              <input type="radio" id="star-4" name="rating" value="4">
+              <label class="label-rating" for="star-4" title="Оценка «4»"></label>    
+              <input type="radio" id="star-3" name="rating" value="3">
+              <label class="label-rating" for="star-3" title="Оценка «3»"></label>  
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label class="label-rating" for="star-2" title="Оценка «2»"></label>    
+              <input type="radio" id="star-1" name="rating" value="1">
+              <label class="label-rating" for="star-1" title="Оценка «1»"></label>
+            </div> 
+          </div>
+        </div>
+      </div>
+        <p class="footer-bottom__copyright copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+        <a href="#" class="footer-bottom__web-design">Web Design — Direct Line Development</a>
+    </div>
   </div>
 </footer>

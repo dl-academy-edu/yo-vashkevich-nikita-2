@@ -6,7 +6,7 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
 
-    <title>DL Academy</title>
+    <title>Main</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -23,17 +23,205 @@
   </head>
   <body>
     <div class="wrapper">
+      @@include('blocks/header.html')
+      
       <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
-        </div>
+        <section class="section section-banner">
+          <div class="container container-banner">
+            <ul class="list-banner" id="banner">
+              <li class="list-banner__item">
+                <form id="control" class="control">
+                  <p class="control__number" id="numberjs">01</p>
+                  <div class="control__btn">
+                    <input class="control__radio" id="radio-1" type="radio" name="changes" data-value="brown" value="1" checked>
+                    <label class="control__label" for="radio-1"></label>
+                  </div>
+                  <div class="control__btn">
+                    <input class="control__radio" id="radio-2" type="radio" name="changes" data-value="pink" value="2">
+                    <label class="control__label" for="radio-2"></label>
+                  </div>
+                  <div class="control__btn">
+                    <input class="control__radio" id="radio-3" type="radio" name="changes" data-value="green" value="3">
+                    <label class="control__label" for="radio-3"></label>
+                  </div>
+                  <div class="control__btn">
+                    <input class="control__radio" id="radio-4" type="radio" name="changes" data-value="red" value="4">
+                    <label class="control__label" for="radio-4"></label>
+                  </div>
+                </form>
+              </li>
+              <li class="list-banner__item">
+                <div class="column">
+                  @@include('blocks/title.html', {
+                    "title-text": "The ooh noo collection",
+                    "class": "column__title",
+                    "id": "title",
+                  })
+                  <p class="column__italic">Designed in Slovenia</p>
+                  @@include('blocks/button.html', {
+                    "button-text": "Explore now",
+                    "class": "column__button",
+                  })
+                </div>
+              </li>
+              <li class="list-banner__item">
+                <div class="banner-image">
+                  <img src="./img/image/thoohnoo-image.png" width="635" height="461" alt="explore-image">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container bottom-text">
+            <p class="bottom-text__content">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+          </div>
+        </section>
+        <section class="section section-category">
+          <div class="container container-category">
+            <h2 class="section-category__title">Category Products</h2>
+            <ul class="category">
+              @@include('blocks/category-card.html', {
+                "class": "category__cards-apparel",
+                "image-src": "./img/image/apparel-kids.png",
+                "image-width": "244",
+                "image-height": "177",
+                "image-alt": "APPAREL KIDS",
+                "card-text": "APPAREL KIDS",
+                "card-link": "../toys.html",
+              })
+              @@include('blocks/category-card.html', {
+                "class": "category__cards-holiday",
+                "image-src": "./img/image/holiday-shop.png",
+                "image-width": "208",
+                "image-height": "244",
+                "image-alt": "HOLIDAY SHOP",
+                "card-text": "HOLIDAY SHOP",
+                "card-link": "../toys.html",
+              })
+              @@include('blocks/category-card.html', {
+                "class": "category__cards-toys",
+                "image-src": "./img/image/toys.png",
+                "image-width": "270",
+                "image-height": "270",
+                "image-alt": "TOYS",
+                "card-text": "TOYS",
+                "card-link": "../toys.html",
+              })
+              @@include('blocks/category-card.html', {
+                "class": "category__cards-accessories",
+                "image-src": "./img/image/accessories.png",
+                "image-width": "240",
+                "image-height": "250",
+                "image-alt": "ACCESSORIES",
+                "card-text": "ACCESSORIES",
+                "card-link": "../toys.html",
+                "class-link": "category__cards-acc",
+              })
+              <li style="display: none" class="category__cards category__cards-sale">
+                <img src="./img/image/sale.png" width="248" height="248" alt="SALE">
+                <a href="#" class="category__cards-link">SALE</a>
+              </li>
+              <li style="display: none" class="category__cards category__cards-adults">
+                <img src="./img/image/apparel-adults.png" width="271" height="204" alt="APPAREL ADULTS">
+                <a href="#" class="category__cards-link">APPAREL ADULTS</a>
+              </li>
+            </ul>
+            <div class="switch">
+              <div class="switch__left">
+                <button type="button" class="switch__left-arrow"></button>
+              </div>
+              <div class="switch__right">
+                <button type="button" class="switch__right-arrow"></button>
+              </div>
+              <p class="switch__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+            </div>
+          </div>
+        </section>
+        <section class="section section-delivery">
+          <div class="container container-delivery">
+            <div class="section-delivery__image">
+              <img src="./img/image/woman.jpg" width="480" height="560" alt="woman">
+            </div>
+            <div class="delivery">
+              @@include('blocks/title.html', {
+                "title-text": "Delivery",
+                "class": "delivery__title",
+              })
+              <div class="delivery__inscription">
+                <p class="delivery__inscription-title">Delivery</p>
+              </div>
+                <p class="delivery__inscription-guarantee">Guarantee</p>
+                <p class="delivery__inscription-credit">Credit</p>
+                <p class="delivery__inscription-text text-some-days">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p class="delivery__inscription-text text-what-started">What started as an outlet to deal &nbsp;with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with &nbsp; to thank!</p>
+                @@include('blocks/button-link.html', {
+                  "button-text": "Learn more",
+                  "class": "button-learn-more",
+                })
+            </div>
+          </div>
+        </section>
+        <section class="section section-work-with">
+          @@include('blocks/title.html', {
+            "title-text": "work with",
+            "class": "visuallyhidden",
+          })
+          <h2 class="visuallyhidden">work with</h2>
+          <div class="container container-work-with">
+            <ul class="list-work-with">
+              <li class="list-work-with__item">
+                <a class="img-mail" href="#"><img src="./img/image/mail-group.svg" width="193" height="60" alt="mail-ru group"></a>
+              </li>
+              <li class="list-work-with__item">
+                <a class="img-apple" href=""><img src="./img/image/apple.svg" width="179" height="61" alt="apple"></a>
+              </li>
+              <li class="list-work-with__item">
+                <a class="img-eltex" href=""><img src="./img/image/eltex.svg" width="216" height="46" alt="eltex"></a>
+              </li>
+              <li class="list-work-with__item">
+                <a class="img-owox" href=""><img src="./img/image/owox.svg" width="211" height="40" alt="owox"></a> 
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section section-about">
+          <div class="container container-about">
+            <div class="preview">
+              <div class="preview__content">
+                @@include('blocks/title.html', {
+                  "title-text": "Design Life Kids",
+                  "class": "preview__title",
+                })
+                <a href="#" class="preview__link">About Us</a> 
+                <p class="preview__text preview__text-buy-now">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                @@include('blocks/button-link.html', {
+                  "button-text": "Buy now",
+                  "class": "preview__button",
+                })
+              </div>
+            </div>
+            <article class="contacts">
+              <div class="contacts__content">
+                @@include('blocks/title.html', {
+                  "title-text": "Contacts",
+                  "class": "contacts__title",
+                })
+                <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <div class="contacts__map">
+                  <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5510575195844!2d49.28803825162973!3d53.512214679916106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1663870506192!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </main>
       @@include('blocks/footer.html')
+      <section class="section-popup">
+        <div class="container-popup">
+          @@include('blocks/form-popup.html')
+        </div>
+      </section>
     </div>
+    <script src="js/index.js" defer></script>
 
     <script src="js/app.js" defer></script>
   </body>

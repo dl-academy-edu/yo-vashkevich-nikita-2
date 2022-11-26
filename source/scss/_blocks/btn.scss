@@ -1,0 +1,28 @@
+/*----------BUTTON-----------*/
+
+.button {
+	font-family: $font-open-sans;
+	display: block;
+	text-transform: uppercase;
+	border: none;
+	max-width: max-content;
+	color: #FFFFFF;
+	background: black;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	text-align: center;
+	padding: 9px 22px;
+}
+
+.button:hover {
+	background: #C29974;
+}
+
+.button:active {
+	background: #CFAF91;
+}
+
+.button:disabled {
+	background: #C7C1C1;
+}

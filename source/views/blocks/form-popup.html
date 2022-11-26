@@ -1,0 +1,38 @@
+<div class="form-block"> 
+	<form class="form" action="https://echo.htmlacademy.ru/" method="post">
+		<div class="form__name">
+			<label class="form__name-label" for="name">Name</label>
+			<input class="form__name-input" type="text" id="name" name="user-name">
+		</div>
+		<div class="form__tel-email">
+			<div class="form__tel">
+				<label class="form__tel-label" for="phone">Phone</label>
+				<input class="form__tel-input" type="tel" id="phone" name="user-phone">
+			</div>
+			<div class="form__email">
+				<label class="form__email-label" for="email">Email</label>
+				<input class="form__email-input" type="email" id="email" name="user-email">
+			</div>
+		</div>
+		<div class="form__mess">
+			<label class="form__mess-label" for="message">Message</label>
+			<textarea class="form__mess-textarea" id="message" name="user-message"></textarea> 
+		</div>
+		<div class="form__check">
+			<input class="form__check-input" type="checkbox" id="consent" name="consent">
+			<label class="form__check-label" for="consent">By clicking on the button, you consent to the processing of your personal data</label>
+			@@include('blocks/button.html', {
+				"button-text": "SUBMIT",
+				"class": "button-submit",
+			})
+			@@include('blocks/button.html', {
+				"button-text": "SUBMIT",
+				"class": "button-disabled",
+				"disabled": "disabled",
+			})
+			<!--button class="button button-submit" type="button">SUBMIT</!--button-->
+			<!--button disabled="disabled" class="button button-disabled" type="button">SUBMIT</!--button-->
+		</div>
+	</form>
+</div>
+<button class="popup-close" type="button"></button>
