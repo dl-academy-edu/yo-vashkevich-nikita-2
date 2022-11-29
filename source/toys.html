@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="google" content="notranslate">
+		<meta name="format-detection" content="telephone=no">
+
+		<title>Toys</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<script>
+		var docElement = document.documentElement;
+		docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+		</script>
+
+		<!-- Favicon -->
+
+		<!-- build:css -->
+		<link href="css/style.min.css" rel="stylesheet">
+		<!-- endbuild -->
+	</head>
+<body>
+	<div class="wrapper">
+		@@include('blocks/header.html')
+		<main class="content">
+			<section class="section section-title-and-breadcrumb"> 
+				<div class="container container-title-and-breadcrumb">
+					@@include('blocks/title.html', {
+						"title-text": "Toy for kids",
+						"class": "title-toy",
+					})
+					<ul class="breadcrumb">
+						@@include('blocks/breadcrumbs.html', {
+							"text": "Home",
+							"link": "../index.html",
+						})
+						@@include('blocks/breadcrumbs.html', {
+							"text": "Catalog",
+							"link": "../catalog.html",
+						})
+						@@include('blocks/breadcrumbs.html', {
+							"text": "Toys",
+							"link": "../Toys.html",
+						})
+					</ul>
+				</div>
+			</section>
+			<section class="section section-parameters">
+				<h2 class="visuallyhidden">parameters</h2>
+				<div class="container container-parameters">
+					<form class="form-parameters" action="https://echo.htmlacademy.ru/">
+						<fieldset class="cost">
+							<legend class="cost__legend">Cost</legend>
+							<input type="range" value="40" min="0" max="100" step="1" class="cost__input-range">
+							<!--input type="range" value="40" min="0" max="100" step="1" class="cost__input-range"-->
+							<div class="cost__p">
+								<span class="cost__span">0</span>
+								<span class="cost__span cost__right">500</span>
+							</div>
+						</fieldset>
+							<fieldset class="color">
+								<legend class="color__legend">Color</legend>
+								<div class="check">
+									<input class="color__input" type="checkbox" id="black" name="colors">
+									<label class="color__label" for="black">Black</label>
+								</div>
+								<div class="check">
+									<input class="color__input" type="checkbox" id="blue" name="colors">
+									<label class="color__label" for="blue">Blue</label>
+								</div>
+								<div class="check">
+									<input class="color__input" type="checkbox" id="green" name="colors">
+									<label class="color__label" for="green">Green</label>
+								</div>
+								<div class="check">
+									<input class="color__input" type="checkbox" id="white" name="colors">
+									<label class="color__label" for="white">White</label>
+								</div>
+							</fieldset>
+							<fieldset class="delivery">
+								<legend class="delivery__legend">Delivery</legend>
+								<div class="radio">
+									<input class="delivery__input" type="radio" id="delivery-free" name="shipping">
+									<label class="delivery__label" for="delivery-free">Free shipping</label>
+								</div>
+								<div class="radio">
+									<input class="delivery__input" type="radio" id="delivery-fast" name="shipping">
+									<label class="delivery__label" for="delivery-fast">Fast shipping</label>
+								</div>
+							</fieldset>
+							<fieldset class="amount">
+								<legend class="amount__legend">Amount</legend>
+								<div class="amount__radio">
+									<input class="amount__input inp-one" id="radio-1" type="radio" name="radio" value="1" checked>
+									<label class="amount__label" for="radio-1">0-5</label>
+								</div>
+								<div class="amount__radio">
+									<input class="amount__input inp-two" id="radio-2" type="radio" name="radio" value="2">
+									<label class="amount__label" for="radio-2">10-20</label>
+								</div>
+								<div class="amount__radio">
+									<input class="amount__input inp-tree" id="radio-3" type="radio" name="radio" value="3">
+									<label class="amount__label" for="radio-3">20-50</label>
+								</div>
+							</fieldset>
+							@@include('blocks/button.html', {
+								"button-text": "Apply",
+								"class": "button-apply",
+							})
+							<!--button type="button" name="apply" class="button button-apply">Apply</!--button-->
+					</form>
+				</div>
+			</section>
+			<section class="section section-products">
+				<h2 class="visuallyhidden">products</h2>
+				<div class="container container-products">
+					<div class="products">
+						@@include('blocks/product-card.html', {
+							"class-mod": "block-sharky",
+							"image": "../../img/image/SHARKY.png",
+							"alt-image": "Shark",
+							"text": "SHARKY BEAN BAG CHAIR COVER",
+							"price": "$60.00 USD",
+							"link": "#",
+						})
+						@@include('blocks/product-card.html', {
+							"class-mod": "block-brass",
+							"image": "../../img/image/BRASS.png",
+							"alt-image": "Brass",
+							"text": "BRASS DECO FRAMES",
+							"price": "$66.00 USD",
+							"link": "#",
+						})
+						@@include('blocks/product-card.html', {
+							"class-mod": "block-cibo",
+							"image": "../../img/image/CIBO.png",
+							"alt-image": "Cibo",
+							"text": "CIBO FULL APRON",
+							"price": "$60.00 USD",
+							"link": "#",
+						})
+						@@include('blocks/product-card.html', {
+							"class-mod": "block-gatcha",
+							"image": "../../img/image/GATCHA.png",
+							"alt-image": "Gatcha",
+							"text": "GATCHA GATCHA GUMBALL MACHINE",
+							"price": "$56.00 USD",
+							"link": "#",
+						})
+						@@include('blocks/product-card.html', {
+							"class-mod": "block-candle",
+							"image": "../../img/image/CANDLE.png",
+							"alt-image": "Candle",
+							"text": "CHRISTMAS ADVENT SCENTED CANDLE",
+							"price": "$29.00 USD",
+							"link": "#",
+						})
+						@@include('blocks/product-card.html', {
+							"class-mod": "block-tangle",
+							"image": "../../img/image/TANGLE.png",
+							"alt-image": "Tangle",
+							"text": "TANGLE SPINNING TEA LIGHT",
+							"price": "$56.00 USD",
+							"link": "#",
+						})
+					</div>
+					@@include('blocks/switch-pages.html')
+				</div>
+			</section>
+		</main>
+		@@include('blocks/footer.html')
+	</div>
+
+	<script src="js/toy.js" defer></script>
+	<script src="js/app.js" defer></script>
+</body>
+</html>

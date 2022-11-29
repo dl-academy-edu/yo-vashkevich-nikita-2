@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="google" content="notranslate">
+		<meta name="format-detection" content="telephone=no">
+  
+		<title>Catalog</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+  
+		<script>
+		  var docElement = document.documentElement;
+		  docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+		</script>
+  
+		<!-- Favicon -->
+  
+		<!-- build:css -->
+		<link href="css/style.min.css" rel="stylesheet">
+		<!-- endbuild -->
+	 </head>
+<body>
+	<div class="wrapper">
+		@@include('blocks/header.html')
+		<main class="content">
+			<section class="section section-title-and-breadcrumb"> 
+				<div class="container container-title-and-breadcrumb">
+					@@include('blocks/title.html', {
+						"title-text": "Category Products",
+						"class": "title-category",
+					})
+					<ul class="breadcrumb">
+						@@include('blocks/breadcrumbs.html', {
+							"text": "Home",
+							"link": "../index.html",
+						})
+						@@include('blocks/breadcrumbs.html', {
+							"text": "Catalog",
+							"link": "../catalog.html",
+						})
+					</ul>
+				</div>
+			</section>
+			<section class="section section-category">
+				<div class="container container-category">
+						@@include('blocks/title.html', {
+							"title-text": "Category-list",
+							"class": "visuallyhidden",
+						})
+						<h2 class="visuallyhidden">Category-list</h2>
+						<ul class="category category-catalog">
+							@@include('blocks/category-card.html', {
+								"class": "category__cards-apparel",
+								"image-src": "./img/image/apparel-kids.png",
+								"image-width": "244",
+								"image-height": "177",
+								"image-alt": "APPAREL KIDS",
+								"card-text": "APPAREL KIDS",
+								"card-link": "../toys.html",
+							})
+							@@include('blocks/category-card.html', {
+								"class": "category__cards-holiday",
+								"image-src": "./img/image/holiday-shop.png",
+								"image-width": "208",
+								"image-height": "244",
+								"image-alt": "HOLIDAY SHOP",
+								"card-text": "HOLIDAY SHOP",
+								"card-link": "../toys.html",
+							})
+							@@include('blocks/category-card.html', {
+								"class": "category__cards-toys",
+								"image-src": "./img/image/toys.png",
+								"image-width": "270",
+								"image-height": "270",
+								"image-alt": "TOYS",
+								"card-text": "TOYS",
+								"card-link": "../toys.html",
+							})
+							@@include('blocks/category-card.html', {
+								"class": "category__cards-accessories",
+								"class-mod": "cards-indent",
+								"image-src": "./img/image/accessories.png",
+								"image-width": "240",
+								"image-height": "250",
+								"image-alt": "ACCESSORIES",
+								"card-text": "ACCESSORIES",
+								"card-link": "../toys.html",
+								"class-link": "category__cards-acc",
+							})
+							@@include('blocks/category-card.html', {
+								"class": "category__cards-sale",
+								"image-src": "./img/image/sale.png",
+								"image-width": "248",
+								"image-height": "248",
+								"image-alt": "SALE",
+								"card-text": "SALE",
+								"card-link": "../toys.html",
+							})
+							@@include('blocks/category-card.html', {
+								"class": "category__cards-adults",
+								"image-src": "./img/image/apparel-adults.png",
+								"image-width": "271",
+								"image-height": "204",
+								"image-alt": "APPAREL ADULTS",
+								"card-text": "APPAREL ADULTS",
+								"card-link": "../toys.html",
+							})
+						</ul>
+				</div>
+			</section>
+			<section class="section section-text">
+				<div class="container container-description">
+					@@include('blocks/title.html', {
+						"title-text": "Product Description",
+						"class": "title-description",
+					})
+					<p class="description">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+					<p class="description">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+					<p class="description">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+				</div>
+			</section>
+		</main>
+		@@include('blocks/footer.html')
+	</div>
+</body>
+</html>

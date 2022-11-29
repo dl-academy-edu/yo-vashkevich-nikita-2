@@ -1,0 +1,111 @@
+.switches {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	margin-bottom: 62px;
+	margin-top: 20px;
+	align-content: center;
+
+	.list-pages {
+		display: flex;
+		align-content: center;
+
+		&__item:not(:last-child) {
+			margin-right: 66px
+		}
+
+		&__button {
+			font-family: $font-montserrat;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 20px;
+			text-transform: uppercase;
+			color: #1E0606;
+			background-color: #FFFFFF;
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s;
+			transition: 0.4s;
+		}
+		&__button:hover {
+			color: #C29974;
+			transform: scale(1.2);
+		}
+		&__button:active {
+			color: #AAAAAA;
+		}
+	}
+
+	.arrow {
+		display: block;
+		width: 13px;
+		height: 26px;
+	}
+
+	.arrow-left {
+		position: absolute;
+		left: 0;
+		background-image: url(../../img/icon/arrow-products-left-opacity.svg);
+		background-color: #FFFFFF;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 28px;
+		transition: 0.3s;
+	}
+	.arrow-left:hover {
+		position: absolute;
+		left: 0;
+		background-image: url(../../img/icon/arrow-products-left-hoover.svg);
+		background-color: #FFFFFF;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 28px;
+		transform: scale(1.2);
+	}
+	.arrow-left:active {
+		position: absolute;
+		left: 0;
+		background-image: url(../../img/icon/arrow-products-left-active.svg);
+		background-color: #FFFFFF;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 26px;
+	}
+
+
+	.arrow-right {
+		position: absolute;
+		right: 0;
+		background-image: url(../../img/icon/arrow-products-right-opacity.svg);
+		background-color: #FFFFFF;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 28px;
+		transition: 0.3s;
+	}
+	.arrow-right:hover {
+		position: absolute;
+		right: 0;
+		background-image: url(../../img/icon/arrow-products-right-hoover.svg);
+		background-color: #FFFFFF;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 28px;
+		transform: scale(1.2);
+	}
+	.arrow-right:active {
+		position: absolute;
+		right: 0;
+		background-image: url(../../img/icon/arrow-products-right-active.svg);
+		background-color: #FFFFFF;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 26px;
+	}
+}
