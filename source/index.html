@@ -116,14 +116,32 @@
                 "card-link": "../toys.html",
                 "class-link": "category__cards-acc",
               })
-              <li style="display: none" class="category__cards category__cards-sale">
+              @@include('blocks/category-card.html', {
+								"class": "category__cards-sale",
+								"image-src": "./img/image/sale.png",
+								"image-width": "248",
+								"image-height": "248",
+								"image-alt": "SALE",
+								"card-text": "SALE",
+								"card-link": "../toys.html",
+							})
+							@@include('blocks/category-card.html', {
+								"class": "category__cards-adults",
+								"image-src": "./img/image/apparel-adults.png",
+								"image-width": "271",
+								"image-height": "204",
+								"image-alt": "APPAREL ADULTS",
+								"card-text": "APPAREL ADULTS",
+								"card-link": "../toys.html",
+							})
+              <!--li style="display: none" class="category__cards category__cards-sale">
                 <img src="./img/image/sale.png" width="248" height="248" alt="SALE">
                 <a href="#" class="category__cards-link">SALE</a>
-              </li>
-              <li style="display: none" class="category__cards category__cards-adults">
+              </!--li>
+              <li-- style="display: none" class="category__cards category__cards-adults">
                 <img src="./img/image/apparel-adults.png" width="271" height="204" alt="APPAREL ADULTS">
                 <a href="#" class="category__cards-link">APPAREL ADULTS</a>
-              </li>
+              </li-->
             </ul>
             <div class="switch">
               <div class="switch__left">

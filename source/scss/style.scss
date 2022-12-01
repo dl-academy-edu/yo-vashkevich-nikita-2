@@ -166,6 +166,8 @@
 }
 
 .section-category {
+	overflow: hidden;
+
 	&__title {
 		/*width: 454px;*/
 		/*height: 47px;*/
@@ -173,10 +175,13 @@
 		font-size: 38px;
 		line-height: 46px;
 		margin-bottom: 30px;
+
 	}
 
 	.category {
-		display: flex;
+		display: inline-flex;
+		//overflow: hidden;
+		//justify-content: space-between;
 	}
 
 	.switch {
@@ -597,7 +602,8 @@
 .cards-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	column-gap: 20px;
+	//justify-content: space-between;
 }
 
 
@@ -993,6 +999,11 @@
 		}
 	}
 }
+
+
+
+
+
 
 
 //ANIMATION
@@ -1397,17 +1408,13 @@
 
 
 
+//SVG
 
-
-
-
-
-
-
-
-
-
-
+.svg {
+	position: relative;
+	left: -20px;
+	margin-bottom: 60px;
+}
 
 
 

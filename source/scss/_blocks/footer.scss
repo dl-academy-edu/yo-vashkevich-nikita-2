@@ -26,7 +26,8 @@
 
 		&__line {
 			border-bottom: solid 1.6px #666666;
-			width: 380px;
+			width: auto;
+			//width: 380px;
 			/*margin-bottom: 28px;*/
 		}
 
@@ -65,6 +66,7 @@
 			//form
 			.form-email {
 				margin-top: 25px;
+				max-width: 380px;
 
 				&__block {
 					display: -webkit-box;
@@ -74,12 +76,23 @@
 				}
 
 				&__input {
-					width: 299px;
+					//max-width: 299px;
+					max-width: auto;
 					height: 41px;
 					background: #666666;
 					color: #ffffff;
 					padding: 0;
 					padding-left: 15px;
+					
+
+					font-family: $font-open-sans;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					display: flex;
+
+					
 				}
 
 				&__input::placeholder {
@@ -189,7 +202,8 @@
 
 	.line-max-width {
 		border-bottom: solid 1.6px #666666;
-		max-width: 100%;
+		//max-width: 100%;
+		width: auto;
 		margin: 28px 0 23px 0;
 	}
 
