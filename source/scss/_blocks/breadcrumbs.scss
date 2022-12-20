@@ -30,6 +30,8 @@
 		line-height: 26px;
 		color: #1E0606;
 		transition: 0.4s;
+		@include font-desktop-pad(20,20);
+		@include font-pad-mobile(20,16);
 	}
 	&__link:hover {
 		transform: scale(1.1);

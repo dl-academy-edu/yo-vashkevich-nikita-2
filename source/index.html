@@ -29,7 +29,7 @@
         <section class="section section-banner">
           <div class="container container-banner">
             <ul class="list-banner" id="banner">
-              <li class="list-banner__item">
+              <li class="list-banner__item list-banner__item-one">
                 <form id="control" class="control">
                   <p class="control__number" id="numberjs">01</p>
                   <div class="control__btn">
@@ -50,7 +50,7 @@
                   </div>
                 </form>
               </li>
-              <li class="list-banner__item">
+              <li class="list-banner__item list-banner__item-two">
                 <div class="column">
                   @@include('blocks/title.html', {
                     "title-text": "The ooh noo collection",
@@ -66,7 +66,14 @@
               </li>
               <li class="list-banner__item">
                 <div class="banner-image">
-                  <img src="./img/image/thoohnoo-image.png" width="635" height="461" alt="explore-image">
+                  <!--img class="banner-image__image" src="./img/image/thoohnoo-image.png" max-width="635" max-height="461" alt="explore-image"-->
+                  <picture>
+                    <source srcset="./img/image/monstr636x461.png" type="image/png" media="(min-width:980px)">
+                    <source srcset="./img/image/monstr385x286.png" type="image/png" media="(min-width:768px)">
+                    <!-- <source srcset="./img/image/monstr292x226.png" type="image/png" media="(max-width:375px)"> -->
+                    <source srcset="./img/image/monstr292x226.png" type="image/png" media="(min-width:0px)">
+                    <img class="banner-image__image" src="./img/image/monstr636x461.png" alt="monster">
+                  </picture>
                 </div>
               </li>
             </ul>
@@ -157,7 +164,14 @@
         <section class="section section-delivery">
           <div class="container container-delivery">
             <div class="section-delivery__image">
-              <img src="./img/image/woman.jpg" width="480" height="560" alt="woman">
+              <!--img class="section-delivery__image-image" src="./img/image/woman.jpg" width="480" height="560" alt="woman"-->
+              <picture>
+                <source srcset="./img/image/woman480x559.jpg" type="image/jpg" width="480" height="560" media="(min-width:769px)">
+                <source srcset="./img/image/woman258x512.jpg" type="image/jpg" width="480" height="560" media="(min-width:376px)">
+                <source srcset="./img/image/woman335x357.jpg" type="image/jpg" media="(min-width:375px)">
+                <source srcset="./img/image/woman335x357.jpg" type="image/jpg" media="(min-width:0px)">
+                <img class="section-delivery__image-image" src="./img/image/woman480x559.jpg" alt="woman">
+              </picture>
             </div>
             <div class="delivery">
               @@include('blocks/title.html', {
@@ -185,18 +199,50 @@
           })
           <h2 class="visuallyhidden">work with</h2>
           <div class="container container-work-with">
-            <ul class="list-work-with">
-              <li class="list-work-with__item">
-                <a class="img-mail" href="#"><img src="./img/image/mail-group.svg" width="193" height="60" alt="mail-ru group"></a>
+            <ul class="list-img">
+              <li class="list-img__item list-img__item-mail">
+                <a href="./Bootstrap.html">
+                  <!--img src="./img/image/mail-group.svg" width="193" height="60" alt="mail-ru group"-->
+                  <picture>
+                    <source srcset="./img/image/mail-group193x60.svg" type="image/png" width="193" height="60" media="(min-width:965px)">
+                    <source srcset="./img/image/mail-group106x33.svg" type="image/png" media="(min-width:376px)">
+                    <source srcset="./img/image/mail-group131x42.svg" type="image/png" media="(max-width:375px)">
+                    <img src="./img/image/mail-group193x60.svg" alt="mail-ru group">
+                  </picture>
+                </a>
               </li>
-              <li class="list-work-with__item">
-                <a class="img-apple" href=""><img src="./img/image/apple.svg" width="179" height="61" alt="apple"></a>
+              <li class="list-img__item list-img__item-apple">
+                <a href="#">
+                  <!--img src="./img/image/apple.svg" width="179" height="61" alt="apple"-->
+                  <picture>
+                    <source srcset="./img/image/apple179x61.svg" type="image/png" max-width="193" max-height="60" media="(min-width:965px)">
+                    <source srcset="./img/image/apple98x34.svg" type="image/png" width="98" height="34" media="(min-width:376px)">
+                    <source srcset="./img/image/apple109x38.svg" type="image/png" media="(max-width:375px)">
+                    <img src="./img/image/apple179x61.svg" alt="apple">
+                  </picture>
+                </a>
               </li>
-              <li class="list-work-with__item">
-                <a class="img-eltex" href=""><img src="./img/image/eltex.svg" width="216" height="46" alt="eltex"></a>
+              <li class="list-img__item list-img__item-eltex">
+                <a href="#">
+                  <!--img src="./img/image/eltex.svg" width="216" height="46" alt="eltex"-->
+                  <picture>
+                    <source srcset="./img/image/eltex216x46.svg" type="image/png" max-width="216" max-height="46" media="(min-width:965px)">
+                    <source srcset="./img/image/eltex118x25.svg" type="image/png" media="(min-width:376px)">
+                    <source srcset="./img/image/eltex150x32.svg" type="image/png" media="(max-width:375px)">
+                    <img src="./img/image/eltex216x46.svg" alt="eltex">
+                  </picture>
+                </a>
               </li>
-              <li class="list-work-with__item">
-                <a class="img-owox" href=""><img src="./img/image/owox.svg" width="211" height="40" alt="owox"></a> 
+              <li class="list-img__item list-img__item-owox">
+                <a href="#">
+                  <!--img src="./img/image/owox.svg" width="211" height="40" alt="owox"-->
+                  <picture>
+                    <source srcset="./img/image/owox211x40.svg" type="image/png" max-width="211" max-height="40" media="(min-width:965px)">
+                    <source srcset="./img/image/owox116x22.svg" type="image/png" media="(min-width:376px)">
+                    <source srcset="./img/image/owox143x26.svg" type="image/png" media="(max-width:375px)">
+                    <img src="./img/image/owox211x40.svg"alt="owox">
+                  </picture>
+                </a> 
               </li>
             </ul>
           </div>
@@ -240,7 +286,9 @@
       </section>
     </div>
     <script src="js/index.js" defer></script>
-
     <script src="js/app.js" defer></script>
   </body>
 </html>
+
+
+<!--width="483" height="196"-->

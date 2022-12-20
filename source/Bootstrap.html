@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="google" content="notranslate">
+      <meta name="format-detection" content="telephone=no">   
+		<title>Demo bootstrap</title>
+      <meta name="description" content="">
+      <meta name="keywords" content="">   
+      <script>
+         var docElement = document.documentElement;
+         docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+      </script>   
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <!-- Favicon -->   
+      <!-- build:css -->
+      <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+      <!-- endbuild -->
+   </head>
+<body>
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg bg-light">
+				<div class="container-fluid">
+				<a class="navbar-brand" href="#">Navbar scroll</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+						<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Link
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link disabled">Link</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<span class="placeholder col-12 bg-success"></span>
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://miro.medium.com/max/2000/1*EldzMvkRwRL3gX1ST5Mftw.png" class="d-block w-100" width="300" height="700" alt="a">
+				</div>
+				<div class="carousel-item">
+					<img src="https://nordiccoder.com/app/uploads/2019/12/FrontendCon-noback-l-4.png" class="d-block w-100" width="300" height="700" alt="b">
+				</div>
+				<div class="carousel-item">
+					<img src="https://sun9-67.userapi.com/Z-XFR-B6Gb4phnuPmEd7I_FVVnWTrAkM5FxGgQ/jnmjedXTv9U.jpg" class="d-block w-100" width="300" height="700" alt="c">
+				</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Предыдущий</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Следующий</span>
+				</button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<span class="placeholder col-12 bg-success"></span>
+			<h1 class="px-4 text-center">Hello, world!</h1>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row row-cols-1 row-cols-md-2 g-4">
+				<div class="col">
+				  <div class="card">
+					 <img src="https://static9.tgcnt.ru/posts/_0/a4/a4240de2c9f73874490514773ad751e8.jpg" class="card-img-top" alt="...">
+					 <div class="card-body">
+						<h5 class="card-title">Заголовок карточки</h5>
+						<p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+					 </div>
+				  </div>
+				</div>
+				<div class="col">
+				  <div class="card">
+					 <img src="https://static9.tgcnt.ru/posts/_0/a4/a4240de2c9f73874490514773ad751e8.jpg" class="card-img-top" alt="...">
+					 <div class="card-body">
+						<h5 class="card-title">Заголовок карточки</h5>
+						<p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+					 </div>
+				  </div>
+				</div>
+				<div class="col">
+				  <div class="card">
+					 <img src="https://static9.tgcnt.ru/posts/_0/a4/a4240de2c9f73874490514773ad751e8.jpg" class="card-img-top" alt="...">
+					 <div class="card-body">
+						<h5 class="card-title">Заголовок карточки</h5>
+						<p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
+					 </div>
+				  </div>
+				</div>
+				<div class="col">
+				  <div class="card">
+					 <img src="https://static9.tgcnt.ru/posts/_0/a4/a4240de2c9f73874490514773ad751e8.jpg" class="card-img-top" alt="...">
+					 <div class="card-body">
+						<h5 class="card-title">Заголовок карточки</h5>
+						<p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+					 </div>
+				  </div>
+				</div>
+			 </div>
+		</div>
+	</section>
+	<div class="d-grid gap-2 col-6 mx-auto">
+		<button class="btn btn-primary" type="button">Button</button>
+		<button type="button" class="btn btn-dark">Dark</button>
+	 </div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>

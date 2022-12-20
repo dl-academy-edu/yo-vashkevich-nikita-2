@@ -1,4 +1,23 @@
 /*----------BUTTON-----------*/
+$maxWidth: 1400;
+
+@mixin  font-desktop-pad($pcSize, $padSize) {
+	$addSize: $pcSize - $padSize;
+	$addPadSize: $addSize + $addSize * 0.7;
+	@media (max-width: 1180px) {
+		font-size: calc(#{$padSize + px} + #{$addPadSize} * ((100vw - 768px) / #{$maxWidth}));
+	}
+}
+
+$padWidth: 768;
+
+@mixin  font-pad-mobile($padSize, $mobSize) {
+	$addSize: $padSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 375px) / #{$padWidth}));
+	}
+}
 
 .button {
 	font-family: $font-open-sans;
@@ -13,6 +32,8 @@
 	line-height: 22px;
 	text-align: center;
 	padding: 9px 22px;
+	@include font-desktop-pad(16,16);
+	@include font-pad-mobile(16,14);
 }
 
 .button:hover {

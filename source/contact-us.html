@@ -48,7 +48,10 @@
 			</section>
 			<section class="section section-form">
 				<div class="container container-form">
-					@@include('blocks/form-popup.html')
+					@@include('blocks/form-popup.html', {
+						"class-mod": "form-contact",
+					})
+					
 					<div class="content">
 						<p class="content__text content__text-up">Our support team are on-hand to assist with any issues you are experiencing.</p>
 						<p class="content__text content__text-down">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>

@@ -19,6 +19,8 @@
 			font-style: normal;
 			font-weight: 700;
 			font-size: 16px;
+			@include font-desktop-pad (16,16);
+			@include font-pad-mobile (14,14);
 			line-height: 20px;
 			text-transform: uppercase;
 			color: #1E0606;
