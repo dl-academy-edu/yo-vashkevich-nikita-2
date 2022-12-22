@@ -1183,7 +1183,7 @@
 				}
 				&__input:checked+.color__label::before {
 					background-color: #FFFFFF;
-					background-image: url("../../img/icon/chek-checked.svg");
+					background-image: url("./../img/icon/chek-checked.svg");
 					background-size: 15px 17px;
 					background-position: 100% 100%;
 					/*width: 11.43px;
@@ -1315,7 +1315,7 @@
 				&__input:checked ~ label::before {
 					border-color: #C29974;
 					background: rgba(125, 151, 218, 0.0);
-					background-image: url(../../img/icon/radio-checked.svg);
+					background-image: url(./../img/icon/radio-checked.svg);
 					background-size: auto;
 					background-repeat: no-repeat;
 					background-position: center;
