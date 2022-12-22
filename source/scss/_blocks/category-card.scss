@@ -12,12 +12,19 @@
 	transition: 0.4s;
 	//margin-bottom: 23px;
 
+
 	&-catalog {
 		@include width-desktop-pad (280, 203);
 		@include width-pad-mobile (203, 155);
 		@include height-desktop-pad (270, 196);
 		@include height-pad-mobile (196, 155);
+
 	}
+	
+	&-img {
+		width: auto;
+		height: auto;
+		}
 
 	&-apparel {
 		background-color: #DBE4DB;
@@ -82,10 +89,6 @@
 			text-decoration-line: underline;
 			opacity: 0.8;
 		}
-
-	.img-apparel {
-
-	}
 
 }
 

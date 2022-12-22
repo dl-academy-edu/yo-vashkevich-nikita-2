@@ -54,10 +54,13 @@
 	}
 
 	&__img{
+		max-width: 380px;
+		max-height: 220px;
 		margin-bottom: 20px;
 		background: #c8c4c4;
 		transition: 0.4s;
 		width: 100%;
+		height: auto;
 	}
 	&__img:hover {
 		transform: scale(1.03);

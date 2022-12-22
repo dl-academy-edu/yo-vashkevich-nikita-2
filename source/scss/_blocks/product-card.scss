@@ -14,6 +14,8 @@
 	&__img {
 		max-width: 380px;
 		max-height: 385px;
+		width: auto;
+		height: auto;
 		// @include width-desktop-pad (380, 203);
 		// @include width-pad-mobile (203, 160);
 		// @include height-desktop-pad (385, 211);

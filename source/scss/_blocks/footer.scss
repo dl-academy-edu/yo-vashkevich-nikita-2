@@ -296,7 +296,7 @@
 							font-size: 17px;
 							color: rgba(0, 0, 0, 0.0);
 							margin-right: 7px;
-							background-image: url(../../img/icon/star.svg);
+							background-image: url(./../img/icon/star.svg);
 							background-size: cover;
 							width: 13px;
 							height: 13px;
@@ -310,13 +310,13 @@
 						}
 						.rating-area > input:checked ~ label {
 							color: #FFFFFF;;
-							background-image: url(../../img/icon/Star-checked.svg);
+							background-image: url(./../img/icon/Star-checked.svg);
 							width: 13px;
 							height: 13px;
 						}
 						.rating-area:not(:checked) > label:hover,
 						.rating-area:not(:checked) > label:hover ~ label {
-							background-image: url(../../img/icon/star-hover.svg);
+							background-image: url(./../img/icon/star-hover.svg);
 							background-repeat: no-repeat;
 							width: 13px;
 							height: 13px;
@@ -327,7 +327,7 @@
 						.rating-area > input:checked ~ label:hover,
 						.rating-area > input:checked ~ label:hover ~ label,
 						.rating-area > label:hover ~ input:checked ~ label {
-							background-image: url(../../img/icon/star-hover.svg);
+							background-image: url(./../img/icon/star-hover.svg);
 							background-repeat: no-repeat;
 							width: 13px;
 							height: 13px;
