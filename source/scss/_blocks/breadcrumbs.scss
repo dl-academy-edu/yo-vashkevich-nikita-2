@@ -12,13 +12,13 @@
 	&__item:not(:last-child)::after {
 		display: inline-block;
 		content: "";
-		background-image: url(../../img/icon/arrow.svg);
+		background-image: url(./../img/icon/arrow.svg);
 		width: 8px;
 		height: 14px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		margin-left: 20px;
-		margin-right: 2opx;
+		// margin-right: 2px;
 	}
 
 	&__link {
@@ -30,6 +30,8 @@
 		line-height: 26px;
 		color: #1E0606;
 		transition: 0.4s;
+		@include font-desktop-pad(20,20);
+		@include font-pad-mobile(20,16);
 	}
 	&__link:hover {
 		transform: scale(1.1);

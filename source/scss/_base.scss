@@ -78,9 +78,7 @@ body {
 	font-family: 'Roboto', sans-serif;*/
 	font-weight: 400;
 	font-size: 16px;
-	-webkit-box-align: 21px;
-	    -ms-flex-align: 21px;
-	        align-items: 21px;
+	align-items: 21px;
 	color: #FFFFFF;
 }
 
@@ -89,9 +87,17 @@ img {
 	max-width: 100%;
 }
 
+
 .container {
+	//margin: 0 60px;
 	max-width: 1180px;
 	margin: 0 auto;
+	/*@media (max-width: 1180px) {
+		margin: 0 60px;
+	}
+	@media (max-width: 768px) {
+		margin: 0 60px;
+	}*/
 }
 
 li {
@@ -100,10 +106,10 @@ li {
 	padding: 0;
 }
 
-/*.undotted {
+.undotted {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-}  не помню для чего на занятиях мы создавали такой класс */ 
+}  
 
-/*--------------------------------------------------------------------------ОБНУЛЕНИЕ------------------------------------------------------------------------*/
+/*----------------------ОБНУЛЕНИЕ-----------------------*/

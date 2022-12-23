@@ -6,9 +6,9 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
 
-    <title>Main</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>DLK - the best online toy store for children and their parents in Russia</title>
+    <meta name="description" content="On our website we can buy everything you need for a fun child's game and everything to decorate the nursery. A large assortment. Payment upon receipt. Fast delivery by courier in all regions of the country.">
+    <meta name="keywords" content="Online toy store, fast delivery by courier, toy production">
 
     <script>
       var docElement = document.documentElement;
@@ -29,7 +29,7 @@
         <section class="section section-banner">
           <div class="container container-banner">
             <ul class="list-banner" id="banner">
-              <li class="list-banner__item">
+              <li class="list-banner__item list-banner__item-one">
                 <form id="control" class="control">
                   <p class="control__number" id="numberjs">01</p>
                   <div class="control__btn">
@@ -50,9 +50,9 @@
                   </div>
                 </form>
               </li>
-              <li class="list-banner__item">
+              <li class="list-banner__item list-banner__item-two">
                 <div class="column">
-                  @@include('blocks/title.html', {
+                  @@include('blocks/title-h1.html', {
                     "title-text": "The ooh noo collection",
                     "class": "column__title",
                     "id": "title",
@@ -66,7 +66,7 @@
               </li>
               <li class="list-banner__item">
                 <div class="banner-image">
-                  <img src="./img/image/thoohnoo-image.png" width="635" height="461" alt="explore-image">
+                    <img class="banner-image__image" src="./img/image/monstr636x461.png" width="636" height="461" alt="a pillow in the form of a monster in a cart">
                 </div>
               </li>
             </ul>
@@ -81,49 +81,73 @@
             <ul class="category">
               @@include('blocks/category-card.html', {
                 "class": "category__cards-apparel",
+                "image-class": "category__cards-img",
                 "image-src": "./img/image/apparel-kids.png",
                 "image-width": "244",
                 "image-height": "177",
                 "image-alt": "APPAREL KIDS",
                 "card-text": "APPAREL KIDS",
-                "card-link": "../toys.html",
+                "card-link": "./toys.html",
               })
               @@include('blocks/category-card.html', {
                 "class": "category__cards-holiday",
+                "image-class": "category__cards-img",
                 "image-src": "./img/image/holiday-shop.png",
                 "image-width": "208",
                 "image-height": "244",
                 "image-alt": "HOLIDAY SHOP",
                 "card-text": "HOLIDAY SHOP",
-                "card-link": "../toys.html",
+                "card-link": "./toys.html",
               })
               @@include('blocks/category-card.html', {
                 "class": "category__cards-toys",
+                "image-class": "category__cards-img",
                 "image-src": "./img/image/toys.png",
                 "image-width": "270",
                 "image-height": "270",
                 "image-alt": "TOYS",
                 "card-text": "TOYS",
-                "card-link": "../toys.html",
+                "card-link": "./toys.html",
               })
               @@include('blocks/category-card.html', {
                 "class": "category__cards-accessories",
+                "image-class": "category__cards-img",
                 "image-src": "./img/image/accessories.png",
                 "image-width": "240",
                 "image-height": "250",
                 "image-alt": "ACCESSORIES",
                 "card-text": "ACCESSORIES",
-                "card-link": "../toys.html",
+                "card-link": "./toys.html",
                 "class-link": "category__cards-acc",
               })
-              <li style="display: none" class="category__cards category__cards-sale">
+              @@include('blocks/category-card.html', {
+								"class": "category__cards-sale",
+                "image-class": "category__cards-img",
+								"image-src": "./img/image/sale.png",
+								"image-width": "248",
+								"image-height": "248",
+								"image-alt": "SALE",
+								"card-text": "SALE",
+								"card-link": "../toys.html",
+							})
+							@@include('blocks/category-card.html', {
+								"class": "category__cards-adults",
+                "image-class": "category__cards-img",
+								"image-src": "./img/image/apparel-adults.png",
+								"image-width": "271",
+								"image-height": "204",
+								"image-alt": "APPAREL ADULTS",
+								"card-text": "APPAREL ADULTS",
+								"card-link": "./toys.html",
+							})
+              <!--li style="display: none" class="category__cards category__cards-sale">
                 <img src="./img/image/sale.png" width="248" height="248" alt="SALE">
                 <a href="#" class="category__cards-link">SALE</a>
-              </li>
-              <li style="display: none" class="category__cards category__cards-adults">
+              </!--li>
+              <li-- style="display: none" class="category__cards category__cards-adults">
                 <img src="./img/image/apparel-adults.png" width="271" height="204" alt="APPAREL ADULTS">
                 <a href="#" class="category__cards-link">APPAREL ADULTS</a>
-              </li>
+              </li-->
             </ul>
             <div class="switch">
               <div class="switch__left">
@@ -139,7 +163,14 @@
         <section class="section section-delivery">
           <div class="container container-delivery">
             <div class="section-delivery__image">
-              <img src="./img/image/woman.jpg" width="480" height="560" alt="woman">
+              <!--img class="section-delivery__image-image" src="./img/image/woman.jpg" width="480" height="560" alt="woman"-->
+              <picture>
+                <source srcset="./img/image/woman480x559.jpg" type="image/jpg" width="480" height="560" media="(min-width:769px)">
+                <source srcset="./img/image/woman258x512.jpg" type="image/jpg" width="258" height="512" media="(min-width:450px)">
+                <source srcset="./img/image/woman335x357.jpg" type="image/jpg" width="335" height="357" media="(min-width:375px)">
+                <source srcset="./img/image/woman335x357.jpg" type="image/jpg" width="335" height="357" media="(min-width:0px)">
+                <img class="section-delivery__image-image" src="./img/image/woman480x559.jpg" width="480" height="560" alt="woman">
+              </picture>
             </div>
             <div class="delivery">
               @@include('blocks/title.html', {
@@ -167,18 +198,50 @@
           })
           <h2 class="visuallyhidden">work with</h2>
           <div class="container container-work-with">
-            <ul class="list-work-with">
-              <li class="list-work-with__item">
-                <a class="img-mail" href="#"><img src="./img/image/mail-group.svg" width="193" height="60" alt="mail-ru group"></a>
+            <ul class="list-img">
+              <li class="list-img__item list-img__item-mail">
+                <a href="./Bootstrap.html">
+                  <!--img src="./img/image/mail-group.svg" width="193" height="60" alt="mail-ru group"-->
+                  <picture>
+                    <source srcset="./img/image/mail-group193x60.svg" type="image/png" width="193" height="60" media="(min-width:965px)">
+                    <source srcset="./img/image/mail-group106x33.svg" type="image/png" media="(min-width:376px)">
+                    <!-- <source srcset="./img/image/mail-group131x42.svg" type="image/png" media="(max-width:375px)"> -->
+                    <img src="./img/image/mail-group193x60.svg" width="193" height="60" alt="mail.ru group">
+                  </picture>
+                </a>
               </li>
-              <li class="list-work-with__item">
-                <a class="img-apple" href=""><img src="./img/image/apple.svg" width="179" height="61" alt="apple"></a>
+              <li class="list-img__item list-img__item-apple">
+                <a href="#">
+                  <!--img src="./img/image/apple.svg" width="179" height="61" alt="apple"-->
+                  <picture>
+                    <source srcset="./img/image/apple179x61.svg" type="image/png" width="193" height="60" media="(min-width:965px)">
+                    <source srcset="./img/image/apple98x34.svg" type="image/png" width="98" height="34" media="(min-width:376px)">
+                    <!-- <source srcset="./img/image/apple109x38.svg" type="image/png" media="(max-width:375px)"> -->
+                    <img src="./img/image/apple179x61.svg" width="179" height="61" alt="apple">
+                  </picture>
+                </a>
               </li>
-              <li class="list-work-with__item">
-                <a class="img-eltex" href=""><img src="./img/image/eltex.svg" width="216" height="46" alt="eltex"></a>
+              <li class="list-img__item list-img__item-eltex">
+                <a href="#">
+                  <!--img src="./img/image/eltex.svg" width="216" height="46" alt="eltex"-->
+                  <picture>
+                    <source srcset="./img/image/eltex216x46.svg" type="image/png" width="216" height="46" media="(min-width:965px)">
+                    <source srcset="./img/image/eltex118x25.svg" type="image/png" media="(min-width:376px)">
+                    <!-- <source srcset="./img/image/eltex150x32.svg" type="image/png" media="(max-width:375px)"> -->
+                    <img src="./img/image/eltex216x46.svg" width="216" height="46" alt="eltex">
+                  </picture>
+                </a>
               </li>
-              <li class="list-work-with__item">
-                <a class="img-owox" href=""><img src="./img/image/owox.svg" width="211" height="40" alt="owox"></a> 
+              <li class="list-img__item list-img__item-owox">
+                <a href="#">
+                  <!--img src="./img/image/owox.svg" width="211" height="40" alt="owox"-->
+                  <picture>
+                    <source srcset="./img/image/owox211x40.svg" type="image/png" width="211" height="40" media="(min-width:965px)">
+                    <source srcset="./img/image/owox116x22.svg" type="image/png" media="(min-width:376px)">
+                    <!-- <source srcset="./img/image/owox143x26.svg" type="image/png" media="(max-width:375px)"> -->
+                    <img src="./img/image/owox211x40.svg" width="211" height="40" alt="owox">
+                  </picture>
+                </a> 
               </li>
             </ul>
           </div>
@@ -207,7 +270,7 @@
                 })
                 <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <div class="contacts__map">
-                  <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5510575195844!2d49.28803825162973!3d53.512214679916106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1663870506192!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe class="contacts__map-iframe" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5510575195844!2d49.28803825162973!3d53.512214679916106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1663870506192!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </article>
@@ -215,14 +278,21 @@
         </section>
       </main>
       @@include('blocks/footer.html')
+      <audio autoplay loop>
+        <source src="./audio/piano.ogg" type="audio/ogg">
+        <source src="./audio/piano.mp3" type="audio/mpeg">
+      </audio>
       <section class="section-popup">
         <div class="container-popup">
+          @@include('blocks/title.html', {
+            "title-text": "Popup",
+            "class": "visuallyhidden",
+          })
           @@include('blocks/form-popup.html')
         </div>
       </section>
     </div>
     <script src="js/index.js" defer></script>
-
     <script src="js/app.js" defer></script>
   </body>
 </html>

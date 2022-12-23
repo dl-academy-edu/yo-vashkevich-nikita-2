@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-	<html lang="en">
 		<head>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width">
 			<meta name="google" content="notranslate">
 			<meta name="format-detection" content="telephone=no">
-	  
+
 			<title>Animation</title>
 			<meta name="description" content="">
 			<meta name="keywords" content="">
-	  
+
 			<script>
-			  var docElement = document.documentElement;
-			  docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
-			</script>
-	  
+				var docElement = document.documentElement;
+				docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+				</script>
+
 			<!-- Favicon -->
-	  
+
 			<!-- build:css -->
 			<link href="css/style.min.css" rel="stylesheet">
 			<!-- endbuild -->
-		 </head>
+		</head>
 <body>
 	<div class="wrapper">
 		@@include('blocks/header.html')
@@ -36,18 +35,22 @@
 					<ul class="breadcrumb"> 
 						@@include('blocks/breadcrumbs.html', {
 							"text": "Home",
-							"link": "../index.html",
+							"link": "./index.html",
 						})
 						@@include('blocks/breadcrumbs.html', {
 							"text": "Animation",
-							"link": "../animation.html",
+							"link": "./animation.html",
 						})
 					</ul>
 				</div>
 			</section>
 			<section class="section section-animation">
 				<div class="container-animation">
-					<img class="sky" src="./img/image/image-animation/Clouds and sun.png" alt="sky">
+					@@include('blocks/title.html', {
+						"title-text": "animation",
+						"class": "visuallyhidden",
+					})
+					<img class="sky" src="./img/image/image-animation/clouds.png" alt="sky" width="1586" height="141">
 					<img class="city" src="./img/image/image-animation/city.png" alt="city" width="1586" height="630">
 					<img class="car-one" src="./img/image/image-animation/Car-one.png" alt="car-one" width="250" height="100">
 					<img class="car-two" src="./img/image/image-animation/Car-two.png" alt="Car-two" width="204" height="96">
@@ -81,6 +84,10 @@
 			</section>
 		</main>
 		@@include('blocks/footer.html')
+		<audio autoplay loop>
+			<source src="./audio/piano.ogg" type="audio/ogg">
+			<source src="./audio/piano.mp3" type="audio/mpeg">
+		</audio>
 	</div>
 </body>
 </html>

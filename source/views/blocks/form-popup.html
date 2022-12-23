@@ -1,4 +1,4 @@
-<div class="form-block"> 
+<div class="form-block @@class-mod"> 
 	<form class="form" action="https://echo.htmlacademy.ru/" method="post">
 		<div class="form__name">
 			<label class="form__name-label" for="name">Name</label>
@@ -25,11 +25,12 @@
 				"button-text": "SUBMIT",
 				"class": "button-submit",
 			})
-			@@include('blocks/button.html', {
+			<button disabled type="button" name="Explore-now" class="button button-disabled">SUBMIT</button>
+			<!-- @@include('blocks/button.html', {
 				"button-text": "SUBMIT",
 				"class": "button-disabled",
 				"disabled": "disabled",
-			})
+			}) -->
 			<!--button class="button button-submit" type="button">SUBMIT</!--button-->
 			<!--button disabled="disabled" class="button button-disabled" type="button">SUBMIT</!--button-->
 		</div>

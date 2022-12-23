@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="google" content="notranslate">
+		<meta name="format-detection" content="telephone=no">
+
+		<title>SVG</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<script>
+		var docElement = document.documentElement;
+		docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+		</script>
+
+		<!-- Favicon -->
+
+		<!-- build:css -->
+		<link href="css/style.min.css" rel="stylesheet">
+		<!-- endbuild -->
+	</head>
+<body>
+	<div class="wrapper">
+		@@include('blocks/header.html')
+		<main class="content">
+			<section class="section section-title-and-breadcrumb"> 
+				<div class="container container-title-and-breadcrumb">
+					@@include('blocks/title.html', {
+						"title-text": "Grid",
+						"class": "title-toy",
+					})
+					<ul class="breadcrumb">
+						@@include('blocks/breadcrumbs.html', {
+							"text": "Home",
+							"link": "./index.html",
+						})
+						@@include('blocks/breadcrumbs.html', {
+							"text": "Grid",
+							"link": "./svg.html",
+						})
+					</ul>
+				</div>
+			</section>
+			<section class="section section-grid">
+				<div class="grid">
+					@@include('blocks/title.html', {
+						"title-text": "grid",
+						"class": "visuallyhidden",
+					})
+					<div class="grid__item1">
+						<div class="grid__item1-text">
+							<p class="grid__item1-txt1">IPHONE 6S</p>
+							<p class="grid__item1-txt2">3D Touch. 12MP photos. 4K video. One powerful phone</p>
+							<p class="grid__item1-txt3">Learn more or visit an Apple Store today</p>
+						</div>
+						<img class="grid__item1-img" src="./img/image/grid/iphone.png" width="249" height="345" alt="phone">
+					</div>
+					<div class="grid__item2">
+						<div class="grid__item2-text">
+							<p class="grid__item2-txt1">Learn more</p>
+							<p class="grid__item2-txt2">How to Use Rotary Evaporator in Chemical Labs</p>
+							<a href="#" class="grid__item2-link">Download now</a>
+						</div>
+					</div>
+					<div class="grid__item3">
+						<img class="grid__item3-img" src="./img/image/grid/keyboard.png" width="314" height="164" alt="keyboard">
+						<div class="grid__item3-text">
+							<p class="grid__item3-txt1">Our Brand New Keyboard</p>
+							<a href="#" class="grid__item3-link">LEARN ›</a>
+						</div>
+					</div>
+					<div class="grid__item4">
+						<div class="grid__item4-block1">
+							<div class="grid__item4-text">
+								<p class="grid__item4-txt1">IMAC.RETINA</p>
+								<p class="grid__item4-txt2">Hardly a month passes these days where</p>
+							</div>
+							<img class="grid__item4-img" src="./img/image/grid/screen.png" width="352" height="164" alt="IMAC">
+						</div>
+						<div class="grid__item4-block2">
+							<div class="grid__item4-text2">
+								<p class="grid__item4-txt3">Apple may be experimenting in the virtual reality space. The company has been granted a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+								<a class="grid__item4-link" href="#">DOWNLOAD NOW ›</a>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item5">
+						<div class="grid__item5-circle">
+							<a class="grid__item5-pop" href="#">popular</a>
+							<img class="grid__item5-img" src="./img/image/grid/disc.png" width="180" height="186" alt="circle">
+							<p class="grid__item5-txt">meet</p>
+						</div>
+						<!-- <img class="grid__item5-img" src="./img/image/grid/circle.png" width="300" height="300" alt="circle"> -->
+						<div class="grid__item5-content">
+							<p class="grid__item5-txt1">iCloud</p>
+							<p class="grid__item5-txt2">With iCloud, you always have the latest versions of your most important things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+							<a class="grid__item5-link" href="#">LEARN MORE</a>
+						</div>
+					</div>
+					<div class="grid__item6">
+						<a class="grid__item6-link" href="#">BEST CHOICE</a>
+						<p class="grid__item6-txt1">Much MuchBetter Experience</p>
+						<picture>
+							<source srcset="./img/image/grid/computer.png" type="image/png" width="700" height="275" media="(min-width:900px)">
+							<source srcset="./img/image/grid/computer.png" type="image/png" width="384" height="151" media="(min-width:550px)">
+							<source srcset="./img/image/grid/computer.png" type="image/png" width="384" height="151" media="(min-width:0px)">
+							<img class="grid__item6-img" src="./img/image/grid/computer.png" width="700" height="275" alt="iPad">
+						</picture>
+						<!-- <img class="grid__item6-img" src="./img/image/grid/computer.png" width="700" height="275" alt="iPad"> -->
+					</div>
+					<div class="grid__item7">
+						<div class="grid__item7-content">
+							<img class="grid__item7-img" src="./img/image/grid/joystick.png" width="303" height="167" alt="joystick">
+							<p class="grid__item7-txt1">Games ourpasion</p>
+							<a class="grid__item7-link" href="#">LEARN ›</a>
+						</div>
+					</div>
+					<div class="grid__item8">
+						<div class="grid__item8-content">
+							<img class="grid__item8-img" src="./img/image/grid/icon.png" width="59" height="59" alt="inst">
+							<a class="grid__item8-link" href="#">Follow me ›</a>
+						</div>
+					</div>
+					<div class="grid__item9">
+						<div class="grid__item9-content">
+							<picture>
+								<source srcset="./img/image/grid/tv.png" type="image/png" width="271" height="215" media="(min-width:551px)">
+								<source srcset="./img/image/grid/tv375.png" type="image/png" width="375" height="237" media="(min-width:0px)">
+								<img class="grid__item9-img" src="./img/image/grid/tv.png" width="271" height="215" alt="tv">
+							</picture>
+							<!-- <img class="grid__item9-img" src="./img/image/grid/tv.png" width="271" height="215" alt="tv"> -->
+							<p class="grid__item9-txt1">More than just a display,  it’s a vision</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('blocks/footer.html')
+		<audio autoplay loop>
+			<source src="./audio/piano.ogg" type="audio/ogg">
+			<source src="./audio/piano.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+
+	<script src="js/app.js" defer></script>
+</body>
+</html>

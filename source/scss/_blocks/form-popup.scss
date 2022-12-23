@@ -1,7 +1,8 @@
 //FORM
 
 .form-block {
-	width: 680px;
+	width: 100%;
+	max-width: 680px;
 	padding: 40px 42px;
 	background: #E5EAF8;
 	//transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
@@ -56,23 +57,31 @@
 			margin-top: 2px;
 		}
 		&__name-input {
-			width: 600px;
+			width: 100%;
+			max-width: 600px;
 			height: 50px;
 			padding-left: 20px;
 		}
 		&__tel-email {
 			display: flex;
 			justify-content: space-between;
+			@media (max-width: 425px) {
+				flex-direction: column;
+			}
 		}
 		&__tel {
 			margin-right: 10px;
 		}
 		&__email {
 			margin-left: 10px;
+			@media (max-width: 425px) {
+				margin-left: 0;
+			}
 		}
 		&__tel-input,
 		&__email-input {
-			width: 290px;
+			width: 100%;
+			max-width: 290px;
 			height: 50px;
 		}
 		
@@ -87,7 +96,8 @@
 		}
 
 		&__mess-textarea {
-			width: 600px;
+			width: 100%;
+			max-width: 600px;
 			height: 150px;
 			font-family: $font-open-sans;
 			font-style: normal;
@@ -125,7 +135,8 @@
 			&-input+ label::before {
 				content: '';
 				display: inline-block;
-				width: 19px;
+				width: 100%;
+				max-width: 19px;
 				height: 19px;
 				/*flex-shrink: 0;
 				flex-grow: 0;*/
@@ -139,7 +150,7 @@
 				margin-right: 15px;
 			}
 			&-input:checked+ label::before {
-				background-image: url("../../img/icon/chek-checked.svg");
+				background-image: url("./../img/icon/chek-checked.svg");
 				background-size: 15px 17px;
 				background-position: 100% 100%;
 				/*width: 11.43px;
@@ -185,13 +196,18 @@
 //close
 .popup-close {
 	background: rgba(125, 151, 218, 0.0);
-	background-image: url(../../img/icon/CLOSE.svg);
+	background-image: url(./../img/icon/CLOSE.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 15px;
 	height: 15px;
 	margin-left: 10px;
 	transition: 0.4s;
+	@media (max-width: 768px) {
+		position: relative;
+		top: -25px;
+		left: -25px;
+	}
 }
 
 .popup-close:hover {

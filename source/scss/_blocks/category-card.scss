@@ -2,11 +2,29 @@
 	display: flex;
 	position: relative;
 	width: 280px;
-	/*height: 270px;*/
+	height: 270px;
+	@include width-desktop-pad (280, 258.22);
+	@include width-pad-mobile (258.22, 247);
+	@include height-desktop-pad (270, 249);
+	@include height-pad-mobile (249, 238);
 	align-items: center;
 	justify-content: center;
 	transition: 0.4s;
-	margin-bottom: 23px;
+	//margin-bottom: 23px;
+
+
+	&-catalog {
+		@include width-desktop-pad (280, 203);
+		@include width-pad-mobile (203, 155);
+		@include height-desktop-pad (270, 196);
+		@include height-pad-mobile (196, 155);
+
+	}
+	
+	&-img {
+		width: auto;
+		height: auto;
+		}
 
 	&-apparel {
 		background-color: #DBE4DB;
@@ -42,21 +60,24 @@
 		text-decoration-line: underline;
 	}
 
-	   &-link {
+	&-link {
 			position: absolute;
 			font-family: $font-montserrat;
 			font-weight: 700;
 			font-size: 26px;
+			@include font-desktop-pad(26,24);
+			@include font-pad-mobile(24,18);
 			line-height: 32px;
 			text-transform: uppercase;
 			color: #FFFFFF;
 			text-align: center;
-			width: 129px;
+			max-width: 129px;
 			transition: 0.4s;
 		}
 
 		&-acc {
-			width: 192px;
+			max-width: 192px;
+			width: 100%;
 		}
 
 		&-link:hover {
@@ -72,9 +93,12 @@
 }
 
 .category__cards:not(:last-child) {
-	margin-right: 20px;
+	//margin-right: 20px;
 }
 
 .cards-indent {
 	margin-left: 200px;
+	@media (max-width: 1048px) {
+		margin-left: 0;
+	}
 }
